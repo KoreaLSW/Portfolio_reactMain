@@ -1,0 +1,210 @@
+.about {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    border: 1px solid white;
+    border-radius: 1rem;
+    box-shadow: 7px 7px 15px -5px rgba(0, 0, 0, 0.82);
+    -webkit-box-shadow: 7px 7px 15px -5px rgba(0, 0, 0, 0.82);
+    -moz-box-shadow: 7px 7px 15px -5px rgba(0, 0, 0, 0.82);
+    padding: 3rem 0;
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.1)
+    );
+    margin-bottom: 20rem;
+}
+
+.topBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.topBox .profileImg_box {
+    width: 15rem;
+    height: 15rem;
+}
+
+.topBox .profileImg_box .profileImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.topBox .textBox {
+    width: 25rem;
+    text-align: start;
+}
+
+.topBox .textBox .textBox_title {
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.topBox .rightBox {
+    display: flex;
+    flex-direction: column;
+
+    align-items: start;
+}
+
+.topBox .rightBox .ageBox {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.topBox .rightBox .ageBox .age_title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.topBox .rightBox .ageBox .age {
+    font-size: 0.9rem;
+}
+
+.topBox .rightBox .emailBox {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 1rem;
+}
+.topBox .rightBox .emailBox .email_title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.topBox .rightBox .imgBox {
+    margin-top: 1.5rem;
+}
+
+.topBox .rightBox .imgBox img {
+    width: 3rem;
+    margin-right: 1.5rem;
+}
+
+.bottomBox {
+    margin-top: 3rem;
+}
+
+.bottomBox .skills_title {
+    font-size: 2rem;
+}
+
+.bottomBox .skills_list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.bottomBox .skills_list .skills_item {
+    width: 5rem;
+}
+
+.bottomBox .skills_list .skills_item img {
+    width: 100%;
+    transition: all 0.3s ease-in;
+}
+
+.bottomBox .skills_list .skills_item img:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+
+    .topBox .profileImg_box {
+        width: 10rem;
+        height: 10rem;
+        flex-shrink: 0;
+    }
+}
+
+@media screen and (max-width: 764px) {
+    .topBox {
+        flex-direction: column;
+    }
+
+    .topBox .textBox {
+        width: 85%;
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+
+    .topBox .rightBox {
+        width: 85%;
+    }
+
+    .rightBox_textBox {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .topBox .rightBox .emailBox {
+        margin: 0;
+    }
+
+    .topBox .rightBox .rightBox_textBox .ageBox {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .topBox .rightBox .rightBox_textBox .emailBox {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .topBox .rightBox .imgBox {
+        width: 100%;
+        text-align: center;
+    }
+
+    .bottomBox {
+        width: 85%;
+        margin: auto;
+        padding-top: 1rem;
+    }
+
+    .bottomBox .skills_title {
+        font-size: 1.5rem;
+    }
+
+    .bottomBox .skills_list {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .bottomBox .skills_list {
+        margin-top: 1rem;
+    }
+
+    .bottomBox .skills_list .skills_item {
+        width: 4rem;
+        margin-top: 1rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+}

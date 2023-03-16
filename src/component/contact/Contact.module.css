@@ -1,0 +1,86 @@
+.contact {
+    max-width: 100%;
+    margin-top: 5rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 1rem;
+    padding: 3rem 0;
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.1)
+    );
+    box-shadow: 7px 7px 15px -5px rgba(0, 0, 0, 0.82);
+    -webkit-box-shadow: 7px 7px 15px -5px rgba(0, 0, 0, 0.82);
+    -moz-box-shadow: 7px 7px 15px -5px rgba(0, 0, 0, 0.82);
+}
+
+.imgBox {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+}
+
+.imgBox p {
+    font-size: 2rem;
+}
+
+.imgBox img {
+    width: 5rem;
+    transition: all 0.2s ease-in;
+}
+
+.imgBox img:hover {
+    transform: scale(1.2);
+}
+
+.mouse {
+    margin-top: 3rem;
+}
+
+.mouse img {
+    cursor: pointer;
+    width: 1.5rem;
+    animation: up_down 1.5s ease-in-out 0s infinite alternate;
+}
+
+.mouse p {
+    font-size: 0.8rem;
+    font-weight: bold;
+    background: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@keyframes up_down {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 764px) {
+    .imgBox p {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .imgBox img {
+        width: 3rem;
+    }
+}

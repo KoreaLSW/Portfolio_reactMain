@@ -1,0 +1,149 @@
+.item {
+    width: 100%;
+    border: 1px solid white;
+    padding: 5rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.1)
+    );
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 12px;
+    transform: translateX(50%);
+    opacity: 0;
+    transition: all 1s ease;
+    /* animation: leftToRight 2.5s ease-in-out; */
+}
+
+.item_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item .imgBox {
+    width: 25rem;
+    height: 15rem;
+    position: relative;
+}
+
+.item .imgBox .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 12px;
+}
+
+.item .imgBox .imghover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 1rem;
+    top: 0;
+    line-height: 15rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: all 0.2s ease-in;
+}
+
+.item .imgBox .imghover a {
+    color: white;
+}
+
+.item .imgBox .imghover:hover {
+    opacity: 1;
+}
+
+.item .rightBox {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+}
+
+.item .rightBox .title {
+    font-family: 'NEXON Lv2 Gothic Bold';
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.item .rightBox .skills {
+    font-weight: bold;
+}
+
+.item .rightBox .comment {
+    font-weight: bold;
+    white-space: pre-wrap;
+    margin-top: 1rem;
+}
+
+.item .rightBox .buttonBox {
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .item {
+        padding: 2rem;
+    }
+    .item .imgBox {
+        width: 22rem;
+        flex-shrink: 0;
+    }
+
+    .item .rightBox {
+        margin-left: 3rem;
+    }
+
+    .item .rightBox .title {
+        font-size: 1.5rem;
+    }
+
+    .item .rightBox .skills {
+        font-size: 0.9rem;
+    }
+
+    .item .rightBox .comment {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 764px) {
+    .item {
+        flex-direction: column;
+    }
+
+    .item .imgBox {
+        width: 100%;
+    }
+
+    .item .rightBox {
+        width: 100%;
+        margin-left: 0rem;
+        margin-top: 1rem;
+    }
+
+    .item .rightBox .title {
+        font-family: 'NEXON Lv2 Gothic Bold';
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    .item .rightBox .skills {
+        font-weight: bold;
+    }
+
+    .item .rightBox .comment {
+        font-weight: bold;
+        white-space: normal;
+        margin-top: 1rem;
+    }
+}
