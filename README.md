@@ -65,9 +65,6 @@ https://reactmain.netlify.app/
 |웹페이지|
 |------|
 ![날씨알리미](https://user-images.githubusercontent.com/89916970/226203139-9b57dca6-1103-4f29-899e-df612707f535.gif)|
-![날씨알리미01](https://user-images.githubusercontent.com/89916970/224506132-da3db601-c3a2-4b61-9dad-5783c15418e6.png)|
-![날씨알리미02](https://user-images.githubusercontent.com/89916970/224506135-d959b19d-9f49-481d-98ef-128fe72a93f1.png)|
-![날씨알리미03](https://user-images.githubusercontent.com/89916970/224506136-80fad40a-225c-4603-b2dd-f55d03c37592.png)|
 
 
 
