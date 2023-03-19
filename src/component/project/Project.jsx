@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 import ProjectItem from './ProjectItem';
 import styles from './Project.module.css';
 
@@ -6,6 +6,16 @@ export default function Project() {
     const [text, setText] = useState([
         {
             id: 0,
+            img: '/img/mainportfolio.gif',
+            title: '나의포트폴리오',
+            skills: 'HTML, CSS, JavaScript, React, FireBase',
+            comment:
+                'React와 FireBaseAPI를 사용하여 포트폴리오 반응형 웹페이지를 만들어보았습니다.\n 애니메이션과 FireBaseAPI를 통해 Comment에서 간단하게 글을 쓸수있는 기능을 넣었습니다.',
+            view: 'https://reactmain.netlify.app/',
+            git: 'https://github.com/KoreaLSW/Portfolio_reactMain',
+        },
+        {
+            id: 1,
             img: '/img/youtube.gif',
             title: 'YouTube',
             skills: 'HTML, CSS, JavaScript, React',
@@ -15,7 +25,7 @@ export default function Project() {
             git: 'https://github.com/KoreaLSW/Youtube_Project',
         },
         {
-            id: 1,
+            id: 2,
             img: '/img/weather.gif',
             title: '날씨 알리미',
             skills: '· HTML, CSS, JavsaScript, React',
@@ -25,7 +35,7 @@ export default function Project() {
             git: 'https://github.com/KoreaLSW/Portfolio_Weather',
         },
         {
-            id: 2,
+            id: 3,
             img: '/img/project_02.png',
             title: '오설록',
             skills: '· HTML, CSS, JavaScript',

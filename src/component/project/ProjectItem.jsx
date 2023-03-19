@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import ProjectButton from './ProjectButton';
 import styles from './ProjectItem.module.css';
 import { css, keyframes } from '@emotion/react';
@@ -19,7 +19,6 @@ const boxStyle = css`
 `;
 export default function ProjectItem({ value }) {
     const listRef = useRef(null);
-    const [scroll, setScroll] = useState(true);
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);

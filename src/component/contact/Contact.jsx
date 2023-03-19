@@ -12,7 +12,7 @@ export default function Contact() {
                 <div className={styles.imgBox}>
                     <div className={styles.ub_box}>
                         <p>GitHub</p>
-                        <a href='https://github.com/KoreaLSW' target='_blank'>
+                        <a href='https://github.com/KoreaLSW' target='blank'>
                             <img src='/img/github.png' alt='' />
                         </a>
                     </div>
