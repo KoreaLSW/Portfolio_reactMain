@@ -26,7 +26,7 @@ export default function Comment() {
     // }, []);
 
     return (
-        <div className={styles.comment}>
+        <div className={styles.comment} id='Comment'>
             <div className={styles.container}>
                 <h1 className={styles.title}>Comment</h1>
                 <ul className={styles.list}>

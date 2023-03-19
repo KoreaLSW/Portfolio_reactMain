@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export default function Pagination({ total, limit, page, setPage }) {
     const numPages = Math.ceil(total / limit);
-    console.log(numPages);
+    //console.log(numPages);
     return (
         <>
             <Nav>

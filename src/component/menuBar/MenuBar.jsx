@@ -61,6 +61,9 @@ export default function MenuBar() {
                     <li className={styles.menuList_item}>
                         <a href='#Project'>Project</a>
                     </li>
+                    <li className={styles.menuList_item}>
+                        <a href='#Comment'>Comment</a>
+                    </li>
                 </ul>
             </div>
         </nav>
