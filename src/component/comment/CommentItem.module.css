@@ -1,0 +1,63 @@
+.item {
+    width: 100%;
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.1)
+    );
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 12px;
+    padding: 3rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.item .topBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item .topBox .userBox,
+.item .topBox .dateBox,
+.item .bottomBox .contentBox {
+    display: flex;
+}
+
+.item .topBox .userBox span,
+.item .topBox .dateBox span,
+.item .bottomBox .contentBox span {
+    font-family: 'NEXON Lv2 Gothic Bold';
+    font-weight: bold;
+}
+
+.item .topBox .userBox p,
+.item .topBox .dateBox p {
+    font-weight: bold;
+}
+
+.item .bottomBox .contentBox p {
+    width: 80%;
+    word-wrap: break-word;
+}
+
+.item .bottomBox {
+    margin-top: 1rem;
+}
+
+.updateAndDelete {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.updateAndDelete p {
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+@media screen and (max-width: 764px) {
+    .item .topBox {
+        flex-direction: column;
+    }
+}

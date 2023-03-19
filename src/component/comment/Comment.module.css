@@ -1,0 +1,40 @@
+.comment {
+    width: 100%;
+    margin-top: 20rem;
+    margin: auto;
+}
+
+.comment .container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.comment .container .title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.comment .container .bottomBox {
+    width: 100%;
+    position: relative;
+}
+
+.comment .container .bottomBox .imgBox {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+}
+
+.comment .container .bottomBox .imgBox img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .comment {
+        width: 95%;
+    }
+}
