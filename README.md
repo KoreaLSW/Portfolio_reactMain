@@ -1,9 +1,9 @@
 # 나의 포트폴리오
 
 #### 📝 개요
-+ KaKaoMap API와 OpenWeather API를 사용해서 날씨알리미 프로젝트를 해보았습니다.
-+ 현재기온, 시간별 및 날짜별 기온, 위치별 기온의 기능을 만들었습니다.
-+ TanStack Query라이브러리를 사용하여 상태관리를 하였습니다.
++ Firebase API를 사용하여 댓글기능(읽기, 쓰기, 수정, 삭제)을 구현했습니다
++ CSS, Javascript를 사용하여 애니메이션을 구현했습니다
++ TanStack Query라이브러리를 useQuery, useMutation사용하여 데이터처리 CRUD를 구현했습니다.
 
 #### ⚒ 사용 기술
 + HTML, CSS, JAVASCRIPT, REACT
