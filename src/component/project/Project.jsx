@@ -6,6 +6,16 @@ export default function Project() {
     const [text, setText] = useState([
         {
             id: 0,
+            img: '/img/football.png',
+            title: 'FootBall',
+            skills: 'HTML, CSS, TypeScript, React, NodeJS',
+            comment:
+                '평소에 축구보는걸 좋아해서 축구에 대한 정보나 축구에 관한 이야기를 나눌수있도록 커뮤니티를 만들어 보았습니다.',
+            view: 'http://leicestercity.store/',
+            git: 'https://github.com/KoreaLSW/football_project',
+        },
+        {
+            id: 1,
             img: '/img/mainportfolio.gif',
             title: '나의포트폴리오',
             skills: 'HTML, CSS, JavaScript, React, FireBase',
@@ -14,16 +24,7 @@ export default function Project() {
             view: 'https://reactmain.netlify.app/',
             git: 'https://github.com/KoreaLSW/Portfolio_reactMain',
         },
-        {
-            id: 1,
-            img: '/img/youtube.gif',
-            title: 'YouTube',
-            skills: 'HTML, CSS, JavaScript, React',
-            comment:
-                'YouTubeAPI를 사용하여 YouTube페이지를 만들어 보았습니다.\n리액트를 사용하여 만들어보았고 Axios를 통해 데이터동신을 해보고 Tailwindcss로 스타일링을 해보았습니다.',
-            view: 'https://bucolic-starlight-e9c325.netlify.app/',
-            git: 'https://github.com/KoreaLSW/Youtube_Project',
-        },
+
         {
             id: 2,
             img: '/img/weather.gif',
