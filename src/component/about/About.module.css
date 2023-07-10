@@ -109,21 +109,41 @@
 
 .bottomBox .skills_list {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: start;
     margin-top: 3rem;
+    margin-left: 5rem;
 }
 
 .bottomBox .skills_list .skills_item {
-    width: 5rem;
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
 }
 
 .bottomBox .skills_list .skills_item img {
-    width: 100%;
+    width: 5rem;
     transition: all 0.3s ease-in;
 }
 
 .bottomBox .skills_list .skills_item img:hover {
     transform: scale(1.2);
+}
+
+.bottomBox .skills_list .skills_item .skills_item_explanation {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.bottomBox .skills_list .skills_item .skills_item_explanation li {
+    list-style: disc;
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
+.bottomBox .skills_list .skills_item .skills_item_explanation li::marker {
+    color: purple;
 }
 
 @media screen and (max-width: 1200px) {

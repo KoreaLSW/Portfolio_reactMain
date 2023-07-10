@@ -57,22 +57,76 @@ export default function About() {
                     <h2 className={styles.skills_title}>Skills</h2>
                     <ul className={styles.skills_list}>
                         <li className={styles.skills_item}>
-                            <img src='/img/html.png' alt='' />
-                        </li>
-                        <li className={styles.skills_item}>
-                            <img src='/img/css.png' alt='' />
+                            <div
+                                style={{
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                }}
+                            >
+                                <img src='/img/html.png' alt='' />
+                                <img
+                                    src='/img/css.png'
+                                    alt=''
+                                    style={{ marginTop: '2rem' }}
+                                />
+                            </div>
+                            <ul className={styles.skills_item_explanation}>
+                                <li>반응형 웹을 구현한 경험이 있습니다.</li>
+                                <li>
+                                    Flex를 활용하여 화면을 구성 할 수 있습니다.
+                                </li>
+                                <li>
+                                    CSS를 사용하여 간단한 애니메이션을 구현 할
+                                    수 있습니다.
+                                </li>
+                            </ul>
                         </li>
                         <li className={styles.skills_item}>
                             <img src='/img/javascript.png' alt='' />
+                            <ul className={styles.skills_item_explanation}>
+                                <li>const / let / var의 차이를 이해합니다.</li>
+                                <li>
+                                    async/await를 사용하여 비동기처리와
+                                    API통신을 구현한 경험이 있습니다.
+                                </li>
+                                <li>
+                                    reduce, map, filter 등 다양한 고차함수를
+                                    활용합니다.
+                                </li>
+                                <li>호이스팅 및 스코프를 이해하고있습니다.</li>
+                            </ul>
                         </li>
                         <li className={styles.skills_item}>
                             <img src='/img/typescript.png' alt='' />
+                            <ul className={styles.skills_item_explanation}>
+                                <li>상황에 맞는 타입을 사용합니다.</li>
+                                <li>
+                                    JS, TS를 이용한 연산과 DOM 객체의 조작경험이
+                                    있습니다.
+                                </li>
+                            </ul>
                         </li>
                         <li className={styles.skills_item}>
                             <img src='/img/react.png' alt='' />
-                        </li>
-                        <li className={styles.skills_item}>
-                            <img src='/img/github2.png' alt='' />
+                            <ul className={styles.skills_item_explanation}>
+                                <li>
+                                    useState, useEffect등 리액트훅의 기능을
+                                    이해하고 사용합니다.
+                                </li>
+                                <li>
+                                    React(Js, Ts)를 사용한 SPA 프로젝트 경험이
+                                    있습니다.
+                                </li>
+                                <li>
+                                    Redux, contextAPI를 사용해 전역 상태관리를
+                                    사용할 수 있습니다.
+                                </li>
+                                <li>
+                                    react-router-dom, react-query, axios등
+                                    개발에 필요한 다양한 라이브러리를 사용할 수
+                                    있습니다.
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
